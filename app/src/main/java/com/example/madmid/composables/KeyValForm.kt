@@ -53,8 +53,6 @@ fun PreferencesForm(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-
-
         Text(
             "Save Data",
             fontSize = 30.sp,
