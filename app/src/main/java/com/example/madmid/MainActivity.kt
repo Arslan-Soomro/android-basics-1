@@ -70,6 +70,9 @@ fun ComposeBasedNavigationRoutes(navController: NavController) {
     Button(onClick = { navController.navigate("water_counter/10") }) {
         Text(text = "Water Counter", fontSize = 20.sp);
     }
+    Button(onClick = { navController.navigate("preferences") }) {
+        Text(text = "Shared Preferences", fontSize = 20.sp);
+    }
 }
 
 @Preview(showBackground = true)
