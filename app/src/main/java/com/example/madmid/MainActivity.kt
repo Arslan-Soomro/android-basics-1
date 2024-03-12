@@ -37,6 +37,7 @@ class MainActivity : ComponentActivity() {
 // Demonstrates use of explicit intent to navigate between two activities
 @Composable
 fun MainScreenUI(context: Context = LocalContext.current, navController: NavController? = null) {
+    // Define Intents for Activities
     val activitySelfieXMLIntent: Intent = Intent(context, ActivitySelfieXML::class.java)
     activitySelfieXMLIntent.putExtra("username", "arslan");
 
@@ -47,14 +48,8 @@ fun MainScreenUI(context: Context = LocalContext.current, navController: NavCont
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-        if(navController != null) {
-            Button(onClick = { navController.navigate("chat") }) {
-                Text(text = "View Chat", fontSize = 20.sp);
-            }
-            Button(onClick = { navController.navigate("water_counter/10") }) {
-                Text(text = "Water Counter", fontSize = 20.sp);
-            }
-        }
+        if(navController != null) ComposeBasedNavigationRoutes(navController = navController);
+        // Intent Based Navigation below ⬇️
         Button(
             onClick = { context.startActivity(activitySelfieXMLIntent) },
         ) {
@@ -65,6 +60,16 @@ fun MainScreenUI(context: Context = LocalContext.current, navController: NavCont
         }
     }
 
+}
+
+@Composable
+fun ComposeBasedNavigationRoutes(navController: NavController) {
+    Button(onClick = { navController.navigate("chat") }) {
+        Text(text = "View Chat", fontSize = 20.sp);
+    }
+    Button(onClick = { navController.navigate("water_counter/10") }) {
+        Text(text = "Water Counter", fontSize = 20.sp);
+    }
 }
 
 @Preview(showBackground = true)

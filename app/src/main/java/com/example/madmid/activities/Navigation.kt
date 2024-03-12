@@ -7,6 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.madmid.MainScreenUI
+import com.example.madmid.composables.prefs.PreferencesUI
 
 @Composable
 fun Navigation() {
@@ -19,6 +20,9 @@ fun Navigation() {
         }
         composable(route = "chat") {
             ChatUI()
+        }
+        composable(route = "preferences") {
+            PreferencesUI();
         }
     }
 }

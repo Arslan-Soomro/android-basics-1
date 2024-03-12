@@ -3,4 +3,5 @@
     <string name="title_activity_chat">ActivityChat</string>
     <string name="title_activity_selfie_compose">ActivitySelfieCompose</string>
     <string name="title_activity_water_counter">ActivityWaterCounter</string>
+    <string name="title_activity_shared_preferences">ActivitySharedPreferences</string>
 </resources>
