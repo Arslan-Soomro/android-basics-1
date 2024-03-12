@@ -1,3 +1,5 @@
+// Illustrates basics of compose and styling
+
 package com.example.madmid.activities
 
 import android.os.Bundle

@@ -1,4 +1,6 @@
-package com.example.madmid.composables.prefs
+// Illustrates use of SharedPreferenceManager for saving and retrieving data
+
+package com.example.madmid.composables
 
 import android.content.Context
 import android.content.SharedPreferences

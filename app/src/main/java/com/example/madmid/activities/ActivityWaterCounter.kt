@@ -1,3 +1,5 @@
+// Illustrates State Management
+
 package com.example.madmid.activities
 
 import android.os.Bundle
@@ -55,10 +57,10 @@ class ActivityWaterCounter : ComponentActivity() {
 }
 
 @Composable
-fun WaterCounterUI(counter: Int) {
+fun WaterCounterUI(defCounter: Int) {
 
     var counter by remember {
-        mutableStateOf(counter)
+        mutableStateOf(defCounter)
     }
 
     Log.i("Kilo", "Counter: $counter");

@@ -1,3 +1,5 @@
+// Illustrates opening a camera using compose and intents
+
 package com.example.madmid.activities
 
 import android.Manifest

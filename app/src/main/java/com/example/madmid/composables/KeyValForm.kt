@@ -1,4 +1,7 @@
-package com.example.madmid.composables.prefs
+// Used to draw form for setting a key and value as well as
+// getting a value with from a key
+
+package com.example.madmid.composables
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

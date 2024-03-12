@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.madmid.activities.ActivitySelfieCompose
 import com.example.madmid.activities.ActivitySelfieXML
-import com.example.madmid.activities.Navigation
+import com.example.madmid.composables.Navigation
 import com.example.madmid.ui.theme.MadMidTheme
 
 class MainActivity : ComponentActivity() {

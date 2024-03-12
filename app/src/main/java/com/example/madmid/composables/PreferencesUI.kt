@@ -1,4 +1,4 @@
-package com.example.madmid.composables.prefs
+package com.example.madmid.composables
 
 import android.content.Context
 import androidx.compose.runtime.Composable
@@ -12,7 +12,6 @@ fun PreferencesUI(context: Context = LocalContext.current) {
     val sharedPrefManager = remember {
         SharedPreferenceManager(context)
     }
-
 
     MadMidTheme {
         PreferencesForm(
